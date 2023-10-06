@@ -1,0 +1,27 @@
+{
+    "name": "PowMrInvertor",
+    "version": "0.1.0",
+    "description": "Library from PowMr Invertor",
+    "keywords": [
+        "PowMr",
+        "Invertor",
+        "Solar",
+        "RS232"
+    ],
+    "authors": {
+        "name": "VoDACode",
+        "url": "https://github.com/VoDACode",
+        "email": "vodacode.work@gmail.com"
+    },
+    "headers": "PowMrInvertor.h",
+    "dependencies": {
+        "4-20ma/ModbusMaster": "^2.0.1"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/VoDACode/PowMrInvertor.git"
+    },
+    "platforms": "*",
+    "frameworks": "arduino"
+}
