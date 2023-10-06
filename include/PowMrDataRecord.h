@@ -64,7 +64,7 @@ struct PowMrDataLoad
 
 struct PowMrDataRecord
 {
-    uint16_t* rawRegisterData = nullptr;
+    uint16_t *rawRegisterData = nullptr;
     bool available = false;
 
     PowMrDataAC ac;
@@ -216,5 +216,13 @@ struct PowMrDataRecord
         if (b == 0)
             return 0;
         return a / b;
+    }
+
+    ~PowMrDataRecord()
+    {
+        if (rawRegisterData != nullptr)
+        {
+            delete[] rawRegisterData;
+        }
     }
 };
